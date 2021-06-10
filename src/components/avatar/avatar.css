@@ -1,0 +1,12 @@
+.avatar {
+	@apply align-middle;
+	@apply rounded-full;
+	@apply w-9 h-9 px-2;
+	@apply text-green-100;
+	@apply bg-green-600;
+	@apply focus:outline-none;
+	@apply hover:bg-green-800 hover:shadow-md;
+	@apply font-sans text-xl font-thin;
+
+	/* border-radius: 50%; */
+}

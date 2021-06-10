@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="205.365 50.748 259.767 59.478" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1, 0, 0, 1, 205.365173, 46.154152)">
+    <path class="b" d="M333.26,27.3l5.053,24.782,11.618,3.947-9.545-25.015L333.26,27.3" transform="translate(-168.016 -4.556)" style="fill: rgb(0, 104, 55); opacity: 0.18;"/>
+    <path class="c" d="M292.31,49.395,298.27,27.3h0l6.991,4.249h0L304.23,55.627l-11.92-6.233" transform="translate(-147.37 -4.556)" style="fill: rgb(0, 104, 55); opacity: 0.19;"/>
+    <path class="d" d="M280.3,31.811l-9.5,22.958,10.864-5.509L270.8,54.769l10-24.019,6.823-3.58,6.991,4.244,7.155-4.18,7.125,3.714,9.545,25.015-11.618-3.947L293.584,55.5l-11.92-6.238,11.92,6.238,13.239-3.481" transform="translate(-136.526 -4.49)" style="fill: none; stroke: rgb(0, 104, 55); stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <text class="e" transform="translate(0 51)" style="white-space: pre; fill: rgb(0, 104, 55); font-family: Roboto-Medium, Roboto; font-size: 49px; font-weight: 500; line-height: 78.4px; perspective-origin: 55.6094px 0px;"><tspan x="0" y="0">better</tspan></text>
+    <text class="f" transform="translate(181.548 51.54)" style="white-space: pre; fill: rgb(0, 104, 55); font-family: Roboto-Light, Roboto; font-size: 49px; font-weight: 300; line-height: 78.4px; perspective-origin: 32.6562px 0px;"><tspan x="0" y="0">aps</tspan></text>
+  </g>
+</svg>

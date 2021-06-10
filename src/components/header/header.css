@@ -1,0 +1,9 @@
+.wrapper {
+	@apply shadow-md bg-gray-100;
+	@apply font-sans p-2;
+	@apply flex justify-between items-center;
+}
+svg {
+	@apply font-sans;
+	@apply h-10 md:h-16;
+}
