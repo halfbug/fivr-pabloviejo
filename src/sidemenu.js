@@ -5,19 +5,22 @@ export const menu = [{
     label: 'Create'
   },
   {
-    route : '/home',
+    route : '/analyse',
     icon: 'search',
-    variant: ''
+    variant: '',
+    label: 'Analyse'
   },
   {
-    route : '/home',
+    route : '/Edit',
     icon: 'edit',
-    variant: ''
+    variant: '',
+    label: 'Edit'
   },
   {
-    route : '/home',
+    route : '/account',
     icon: 'manage_accounts',
-    variant: '-outlined'
+    variant: '-outlined',
+    label:'Account',
   },
   
 ];

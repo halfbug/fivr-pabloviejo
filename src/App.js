@@ -4,6 +4,8 @@ import {
 } from "react-router-dom";
 // import Home from './pages/home';
 import Create from './pages/create';
+import Analyse from './pages/analyse';
+import Edit from './pages/edit';
 
 function App() {
   return (
@@ -11,8 +13,8 @@ function App() {
     <Router>
                 <Route path='/' exact component={Create} />
                 <Route path='/create' exact component={Create} />
-                {/* <Route path='/dashboard'  component={Dashboard} />
-                <Route path='/signup'  component={Signup}  /> */}
+                <Route path='/analyse' exact component={Analyse} />
+                <Route path='/edit' exact component={Edit} />
     </Router>
     </div>
   );
