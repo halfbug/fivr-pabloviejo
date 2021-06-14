@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
  * Primary UI component for user interaction
  */
 export const Sidebar = ({ menu, ...props }) => {
-  // const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  
   const [open, setopen] = useState(false);
   return (
    <div className={`sidebar ${open && `extended`}`}>
