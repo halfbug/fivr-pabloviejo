@@ -7,7 +7,7 @@ import Button from '../button';
 import './header.css';
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (
-  <header>
+  <header className="z-50">
     <div className="wrapper">
       <div>
      <Logo />

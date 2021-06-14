@@ -1,0 +1,44 @@
+.sidebar {
+	@apply w-16 h-full z-40 flex flex-col justify-start items-center;
+	@apply bg-green-600;
+	@apply fixed top-14 md:top-20 drop-shadow-xl;
+	@apply text-white duration-300;
+}
+
+.extended {
+	@apply w-52 h-full;
+	@apply duration-300;
+}
+
+.openbutton,
+.closebutton {
+	@apply m-2;
+}
+.openbutton {
+	/* @apply ease-in-out delay-500; */
+}
+.closebutton {
+	@apply ml-44 ease-out duration-500;
+}
+.sidebar a,
+.sidebar button {
+	@apply focus:outline-none block;
+}
+
+.sidebar a {
+	@apply hover:text-green-100 hover:bg-green-900;
+	@apply text-white;
+	@apply w-full pt-2 align-middle h-10;
+	padding: 6px 8px 6px 8px;
+	text-decoration: none;
+	font-size: 20px;
+	@apply font-thin;
+	@apply flex items-center justify-center;
+	/* color: #818181; */
+}
+.extended a {
+	@apply justify-start;
+}
+.extended a i {
+	@apply mx-3;
+}
