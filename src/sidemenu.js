@@ -1,7 +1,8 @@
 export const menu = [{
-    route : '/home',
+    route : '/create',
     icon: 'location_on',
-    variant: ''
+    variant: '',
+    label: 'Create'
   },
   {
     route : '/home',
