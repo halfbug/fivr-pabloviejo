@@ -1,0 +1,4 @@
+.thumbnail {
+	width: 150px; /* Set a small width */
+	@apply self-center;
+}
