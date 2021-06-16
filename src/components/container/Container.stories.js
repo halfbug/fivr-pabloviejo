@@ -3,7 +3,7 @@ import React from 'react';
 import { Container } from './Container';
 
 export default {
-  title: 'Example/Container',
+  title: 'Layout/Container',
   component: Container,
   // argTypes: {
   //   backgroundColor: { control: 'color' },

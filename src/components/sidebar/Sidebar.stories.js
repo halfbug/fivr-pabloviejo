@@ -6,7 +6,7 @@ import { Sidebar } from './SideBar';
 import {menu} from '../../sidemenu';
 
 export default {
-  title: 'Example/Sidebar',
+  title: 'Layout/Sidebar',
   component: Sidebar,
   argTypes: {
     menu: { control: 'object' },

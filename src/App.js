@@ -6,6 +6,7 @@ import {
 import Create from './pages/create';
 import Analyse from './pages/analyse';
 import Edit from './pages/edit';
+import Account from './pages/account';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
                 <Route path='/create' exact component={Create} />
                 <Route path='/analyse' exact component={Analyse} />
                 <Route path='/edit' exact component={Edit} />
+                <Route path='/account' exact component={Account} />
     </Router>
     </div>
   );

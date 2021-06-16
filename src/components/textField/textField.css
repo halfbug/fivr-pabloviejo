@@ -1,0 +1,14 @@
+.textfield {
+	@apply align-middle my-1;
+	@apply focus:outline-white w-full;
+	@apply bg-gray-400 text-green-600 font-light;
+	@apply focus:border-gray-600 py-2 px-1;
+
+	/* border-radius: 50%; */
+}
+
+.label {
+	min-width: 5rem;
+	@apply font-sans self-center;
+	@apply text-green-600;
+}

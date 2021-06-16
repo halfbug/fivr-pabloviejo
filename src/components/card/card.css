@@ -1,4 +1,4 @@
 .card {
 	width: 160px; /* Set a small width */
-	@apply flex flex-col mb-5 md:mb-1;
+	@apply flex flex-col mb-5 md:mb-1 self-center;
 }

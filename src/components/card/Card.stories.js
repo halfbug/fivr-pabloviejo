@@ -5,7 +5,7 @@ import Button from '../button';
 import Thumbnail from '../thumbnail';
 
 export default {
-  title: 'Example/Card',
+  title: 'Layout/Card',
   component: Card,
   // argTypes: {
   //   backgroundColor: { control: 'color' },

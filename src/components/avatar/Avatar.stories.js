@@ -3,7 +3,7 @@ import React from 'react';
 import { Avatar } from './Avatar';
 
 export default {
-  title: 'Example/Avatar',
+  title: 'Layout/Avatar',
   component: Avatar,
   // argTypes: {
   //   backgroundColor: { control: 'color' },

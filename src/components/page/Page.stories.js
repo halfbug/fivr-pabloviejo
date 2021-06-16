@@ -8,7 +8,7 @@ import {
   } from "react-router-dom";
 
 export default {
-  title: 'Example/Page',
+  title: 'Layout/Page',
   component: Page,
   argTypes: {
     children: { 
