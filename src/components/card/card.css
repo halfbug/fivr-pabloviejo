@@ -1,4 +1,4 @@
-.thumbnail {
-	width: 150px; /* Set a small width */
-	@apply self-center;
+.card {
+	width: 160px; /* Set a small width */
+	@apply flex flex-col mb-5 md:mb-1;
 }

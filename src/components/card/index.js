@@ -1,2 +1,2 @@
-import {Thumbnail} from "./Card";
-export default Thumbnail;
+import {Card} from "./Card";
+export default Card;

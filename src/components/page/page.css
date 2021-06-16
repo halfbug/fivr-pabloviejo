@@ -71,5 +71,5 @@ li {
 }
 
 h1 {
-	@apply text-green-600 font-medium text-lg mb-3;
+	@apply text-green-600 font-semibold text-xl mb-3;
 }

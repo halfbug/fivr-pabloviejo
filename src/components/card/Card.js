@@ -1,22 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './thumbnail.css';
+import './card.css';
 
 /**
  * Primary UI component for user interaction
  */
-export const Thumbnail = ({ className, ...props }) => {
+export const Card = ({ className, media, detail, ...props }) => {
  
   return (
-    <img
-      className={`thumbnail ${className}`}
-      {...props}
-    />
+           <div className={`card ${className}`}>
+                        
+                      {media}
+                      {detail}
+           </div>
       
   );
 };
 
-Thumbnail.propTypes = {
+Card.propTypes = {
   /**
    * Is this the principal call to action on the page?
  
@@ -24,6 +25,6 @@ Thumbnail.propTypes = {
   onClick: PropTypes.func,
 };
 
-Thumbnail.defaultProps = {
+Card.defaultProps = {
   src: undefined,
 };
