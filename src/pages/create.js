@@ -6,10 +6,16 @@ import DarkMap from '../assets/darkmap.png';
 import LightMap from '../assets/lightmap.png';
 import Button from '../components/button';
 import Thumbnail from '../components/thumbnail';
+import { useHistory } from "react-router-dom";
 import Card from '../components/card';
 
 
 const Create = () => {
+    let history = useHistory();
+
+    function handlePrint() {
+     history.push("/print");
+    }
     return (
         <Page menu={menu} >
            
@@ -24,7 +30,7 @@ const Create = () => {
                     />
                   
                     <Card
-                    detail={ <Button size="large" label="Print" />}
+                    detail={ <Button size="large" label="Print" onClick={handlePrint} />}
                     media={<Thumbnail src={LightMap} className="self-center"  />}
                     onClick={() => {}}
                     />

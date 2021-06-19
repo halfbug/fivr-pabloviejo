@@ -10,13 +10,13 @@ export const SelectField = ({ className, label, labelClass, options, selectedVal
   if (label)
   return(<div className="flex flex-row align-middle">
     <label className={`label mr-2 ${labelClass}`} >{label}</label>
-    <select id="cars" className="dropbtn" value={selectedValue}>
+    <select id="cars" className={`dropbtn ${className}`} value={selectedValue}>
       {options.map(({value, label})=><option value={value}>{label}</option>)}
     </select>
   </div>)
   else 
   return (
-    <select id="cars" className="dropbtn" value={selectedValue}>
+    <select id="cars" className={`dropbtn ${className}`} value={selectedValue}>
       {options.map(({value, label})=><option value={value}>{label}</option>)}
     </select>
    );

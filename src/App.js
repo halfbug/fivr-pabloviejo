@@ -8,6 +8,7 @@ import Analyse from './pages/analyse';
 import Edit from './pages/edit';
 import Account from './pages/account';
 import Style from './pages/style';
+import Print from './pages/print';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path='/edit' exact component={Edit} />
                 <Route path='/account' exact component={Account} />
                 <Route path='/style' exact component={Style} />
+                <Route path='/print' exact component={Print} />
     </Router>
     </div>
   );
