@@ -7,6 +7,7 @@ import Create from './pages/create';
 import Analyse from './pages/analyse';
 import Edit from './pages/edit';
 import Account from './pages/account';
+import Style from './pages/style';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
                 <Route path='/analyse' exact component={Analyse} />
                 <Route path='/edit' exact component={Edit} />
                 <Route path='/account' exact component={Account} />
+                <Route path='/style' exact component={Style} />
     </Router>
     </div>
   );

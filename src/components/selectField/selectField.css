@@ -1,0 +1,4 @@
+/* Dropdown  */
+.dropbtn {
+	@apply border w-full sm:w-44 border-gray-600 rounded-md py-1 px-2 font-sans font-medium text-sm text-green-600 bg-white focus:outline-none;
+}

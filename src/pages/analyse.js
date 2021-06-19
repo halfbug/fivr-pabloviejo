@@ -6,10 +6,16 @@ import DarkMap from '../assets/darkmap.png';
 import LightMap from '../assets/lightmap.png';
 import Button from '../components/button';
 import Thumbnail from '../components/thumbnail';
+import { useHistory } from "react-router-dom";
 import Card from '../components/card';
 
 
 const Analyse = () => {
+    let history = useHistory();
+
+  function handleClick() {
+   history.push("/style");
+  }
     return (
         <Page menu={menu} >
            
@@ -18,15 +24,14 @@ const Analyse = () => {
                 <div className="flex flex-col sm:flex-row justify-around ">
                    
                     <Card
-                    detail={<Button size="large" label="Digital" />}
+                    detail={<Button size="large" label="Digital" onClick={handleClick} />}
                     media={<Thumbnail src={DarkMap} className="self-center" />}
-                    onClick={() => {}}
                     />
 
                     <Card
-                    detail={<Button size="large" label="Non digital" />}
+                    detail={<Button size="large" label="Non digital" onClick={handleClick} />}
                     media={<Thumbnail src={LightMap} className="self-center" />}
-                    onClick={() => {}}
+                   
                     />
                    
                     </div>
