@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Page from '../components/page';
 import { menu } from '../sidemenu';
 import  Container from '../components/container';
@@ -9,6 +9,8 @@ import Thumbnail from '../components/thumbnail';
 import Card from '../components/card';
 import SelectedField from '../components/selectField';
 import TextField from '../components/textField';
+import Pointer from '../assets/pointer.png';
+import { Range, getTrackBackground } from 'react-range';
 
 
 const Analyse = () => {
@@ -24,6 +26,9 @@ const Analyse = () => {
             {value:'dark', label: "Dark"},
 
     ];
+    const [state, setstate] = useState({values:[50]});
+    const MIN = 0;
+    const MAX = 100;
     return (
         <Page menu={menu} >
            
@@ -53,16 +58,73 @@ const Analyse = () => {
                    <input className="w-6 h-6" type="color" name="color1" value="#69c8f2" />
                    <input className="w-6 h-6" type="color" name="color1" value="#9fe075" />
                    <input className="w-6 h-6" type="color" name="color1" value="#c469f2" />
-
+                   <input className="w-6 h-6" type="color" name="color1" value="#8b8b8b" />
                    </div>
 
                 </div>
                 
 
-                <div className="flex flex-row justify-start align-middle my-1">
-                    <label className="text-green-600 font-sans w-1/4">Zoom</label>  
-                <input type="range" id="vol" name="vol" min="0" max="50" 
-                className="bg-green-600" />
+                <div className="flex flex-row justify-start align-middle my-1 w-2/3">
+                    <label className="text-green-600 font-sans w-3/4">Zoom</label>  
+                {/* <input type="range" id="vol" name="vol" min="0" max="50" 
+                className="bg-green-600" /> */}
+                <Range
+                step={0.1}
+                min={0}
+                max={100}
+                values={state.values}
+                onChange={(values) => setstate({ values })}
+                renderTrack={({ props, children }) => (
+                    <div
+                    onMouseDown={props.onMouseDown}
+                    onTouchStart={props.onTouchStart}
+                    style={{
+                        ...props.style,
+                        height: "36px",
+                        display: "flex",
+                        width: "100%"
+                    }}
+                    >
+                    <div
+                        ref={props.ref}
+                        style={{
+                        height: "5px",
+                        width: "100%",
+                        borderRadius: "4px",
+                        background: getTrackBackground({
+                            values: state.values,
+                            colors: ["#006837", "#0068379b"],
+                            min: MIN,
+                            max: MAX
+                        }),
+                        alignSelf: "center"
+                        }}
+                    >
+                        {children}
+                    </div>
+                    </div>
+                )}
+                renderThumb={({ props, isDragged }) => (
+                    <div
+                    {...props}
+                    style={{
+                        ...props.style,
+                        
+                    }}
+                    className="bg-gray-600 h-1.5 w-0.5 rounded-t-md flex"
+                    >
+                    <div
+                        className={`${isDragged? `bg-green-900` : `bg-green-600`}
+                        h-4 w-0.5 -mt-3 focus:outline-none flex justify-start align-top relative
+                        `}
+                    >
+                    <div className={`absolute bg-green-600 text-white rounded-lg p-0.5 -left-2 -top-4 text-xs focus:outline-none ${isDragged? `bg-green-900` : `bg-green-600`} `}>
+                        {state.values[0].toFixed(0)}</div>
+                    
+                    </div>
+                    </div>
+                    )}
+                />
                 </div>
                 
                 <div className="flex flex-row justify-start align-middle my-1">
@@ -82,15 +144,28 @@ const Analyse = () => {
                 </div>
                  </div>
                  <div className="flex-col justify-around w-full sm:w-2/5 px-3">
-                 <div className="flex flex-none flex-col sm:flex-row justify-between align-middle p-3">
-                   <span className="text-green-600" >Style ID</span>
-                   <span className="text-green-600">MB013425786</span> 
+                 <div className="flex flex-row justify-between align-middle my-1">
+                    
+                    <SelectedField label="Templage ID" options={[{value: "MU234S88", label: "MU234S88"}]} className="w-3/4"  />
                 </div>
-                <div className="flex flex-col sm:flex-row justify-center p-3 sm:h-5/6 align-top">
+                <div className="flex flex-col sm:flex-row justify-center p-3 sm:h-3/6 align-top">
                    <Thumbnail src={DarkMap} className="flex  flex-col w-full self-start"/>
                 </div>
+                <div className="flex flex-col sm:flex-col justify-end align-middle p-2">
+                <div className="flex flex-row justify-center align-middle p-2">
+                    <input type="radio" name="gender" value="jpg" />  <label className="text-green-600 font-sans self-center">JPG</label>
+                </div>
+                <div className="flex flex-row justify-center align-middle p-2">
+                    <input type="radio" name="gender" value="png" />  <label className="text-green-600 font-sans self-center">PNG</label>
+                </div>
+                <div className="flex flex-row justify-center align-middle p-2">
+                    <input type="radio" name="gender" value="pdf" />  <label className="text-green-600 font-sans self-center">PDF</label>
+                </div>
+                
+  
+                </div>
                 <div className="flex flex-col sm:flex-row justify-end align-middle p-3">
-                   <Button label="Download JSON" primary />
+                   <Button label="Download map" primary />
                 </div>
                  </div>
                 </Container>
