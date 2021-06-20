@@ -16,6 +16,9 @@ const Create = () => {
     function handlePrint() {
      history.push("/print");
     }
+    function handleWeb() {
+        history.push("/web");
+       }
     return (
         <Page menu={menu} >
            
@@ -24,9 +27,9 @@ const Create = () => {
                 <div className="flex flex-col sm:flex-row justify-around ">
                     
                     <Card
-                    detail={ <Button size="large" label="Web map" />}
+                    detail={ <Button size="large" label="Web map" onClick={handleWeb}  />}
                     media={<Thumbnail src={DarkMap}className="self-center"  />}
-                    onClick={() => {}}
+                  
                     />
                   
                     <Card

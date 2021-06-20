@@ -27,6 +27,7 @@ const Analyse = () => {
 
     ];
     const [state, setstate] = useState({values:[50]});
+    const STEP = 0.1;
     const MIN = 0;
     const MAX = 100;
     return (
