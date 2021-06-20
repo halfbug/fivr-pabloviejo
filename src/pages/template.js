@@ -25,73 +25,73 @@ const Template = () => {
 
                 <div className="flex flex-row w-full justify-between flex-wrap">
                 <Card
-                  className="border p-2 rounded"
+                  className="border p-2 rounded  bg-white text-green-600"
                   detail={<span className="self-center mt-1">Digital</span>}
                   media={<Thumbnail className="self-center" src={LightMap}/>}
                   onClick={()=>history.push('/web')}
                 />
                 <Card
-                  className="border p-2 rounded"
+                  className="border p-2 rounded  bg-white text-green-600"
                   detail={<span className="self-center mt-1">Digital</span>}
                   media={<Thumbnail className="self-center" src={DarkMap}/>}
                   onClick={()=>history.push('/web')}
                 />
                 <Card
-                  className="border p-2 rounded"
+                  className="border p-2 rounded  bg-white text-green-600"
                   detail={<span className="self-center mt-1">Digital</span>}
                   media={<Thumbnail className="self-center" src={LightMap}/>}
                   onClick={()=>history.push('/web')}
                 />
                 <Card
-                  className="border p-2 rounded"
+                  className="border p-2 rounded  bg-white text-green-600"
                   detail={<span className="self-center mt-1">Digital</span>}
                   media={<Thumbnail className="self-center" src={DarkMap}/>}
                   onClick={()=>history.push('/web')}
                 />
                 <Card
-                  className="border p-2 rounded"
+                  className="border p-2 rounded  bg-white text-green-600"
                   detail={<span className="self-center mt-1">Digital</span>}
                   media={<Thumbnail className="self-center" src={LightMap}/>}
                   onClick={()=>history.push('/web')}
                 />
                 <Card
-                  className="border p-2 rounded"
+                  className="border p-2 rounded  bg-white text-green-600"
                   detail={<span className="self-center mt-1">Digital</span>}
                   media={<Thumbnail className="self-center" src={DarkMap}/>}
                   onClick={()=>history.push('/web')}
                 />
                 <Card
-                  className="border p-2 rounded"
+                  className="border p-2 rounded  bg-white text-green-600"
                   detail={<span className="self-center mt-1">Digital</span>}
                   media={<Thumbnail className="self-center" src={LightMap}/>}
                   onClick={()=>history.push('/web')}
                 />
                 <Card
-                  className="border p-2 rounded"
+                  className="border p-2 rounded  bg-white text-green-600"
                   detail={<span className="self-center mt-1">Digital</span>}
                   media={<Thumbnail className="self-center" src={DarkMap}/>}
                   onClick={()=>history.push('/web')}
                 />
                 <Card
-                  className="border p-2 rounded"
+                  className="border p-2 rounded  bg-white text-green-600"
                   detail={<span className="self-center mt-1">Digital</span>}
                   media={<Thumbnail className="self-center" src={LightMap}/>}
                   onClick={()=>history.push('/web')}
                 />
                 <Card
-                  className="border p-2 rounded"
+                  className="border p-2 rounded  bg-white text-green-600"
                   detail={<span className="self-center mt-1">Digital</span>}
                   media={<Thumbnail className="self-center" src={DarkMap}/>}
                   onClick={()=>history.push('/web')}
                 />
                 <Card
-                  className="border p-2 rounded"
+                  className="border p-2 rounded  bg-white text-green-600"
                   detail={<span className="self-center mt-1">Digital</span>}
                   media={<Thumbnail className="self-center" src={DarkMap}/>}
                   onClick={()=>history.push('/web')}
                 />
                 <Card
-                  className="border p-2 rounded"
+                  className="border p-2 rounded  bg-white text-green-600"
                   detail={<span className="self-center mt-1">Digital</span>}
                   media={<Thumbnail className="self-center" src={DarkMap}/>}
                   onClick={() => console.log("yes")}
