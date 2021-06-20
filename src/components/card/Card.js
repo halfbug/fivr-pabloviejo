@@ -8,7 +8,7 @@ import './card.css';
 export const Card = ({ className, media, detail, ...props }) => {
  
   return (
-           <div className={`card ${className}`}>
+           <div className={`card ${className}`} {...props}>
                         
                       {media}
                       {detail}

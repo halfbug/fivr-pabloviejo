@@ -8,12 +8,12 @@ import Button from '../components/button';
 import Thumbnail from '../components/thumbnail';
 import Card from '../components/card';
 import SelectedField from '../components/selectField';
-import TextField from '../components/textField';
-import Pointer from '../assets/pointer.png';
+
+import { useHistory } from "react-router-dom";
 import { Range, getTrackBackground } from 'react-range';
 
 
-const Analyse = () => {
+const Web = () => {
     const selectOptions = [
         {value : 'UK', label: 'United kingdom' },
         {value : 'Afghanistan', label: 'Afghanistan' },
@@ -24,7 +24,7 @@ const Analyse = () => {
     const STEP = 0.1;
     const MIN = 0;
     const MAX = 100;
-
+    let history = useHistory();
     return (
         <Page menu={menu} >
            
@@ -32,7 +32,7 @@ const Analyse = () => {
                
                 <div className="flex flex-row w-full justify-between mb-3">
                     <h1>Web map creator</h1>
-                    <SelectedField label="Templage ID" options={[{value: "MU234S88", label: "MU234S88"}]} className="w-3/4"  />
+                    <SelectedField label="Templage ID" options={[{value: "MU234S88", label: "MU234S88"},{value: "MU234S88", label: "MU234S58"}]} className="w-3/4"  onChange={()=>history.push('/template')}  />
                 </div>
 
                 <div className="flex flex-row w-full justify-between flex-wrap">
@@ -179,4 +179,4 @@ const Analyse = () => {
     )
 }
 
-export default Analyse
+export default Web

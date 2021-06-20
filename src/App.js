@@ -10,6 +10,7 @@ import Account from './pages/account';
 import Style from './pages/style';
 import Print from './pages/print';
 import Web from './pages/web';
+import Template from './pages/template';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/style' exact component={Style} />
                 <Route path='/print' exact component={Print} />
                 <Route path='/web' exact component={Web} />
+                <Route path='/template' exact component={Template} />
     </Router>
     </div>
   );
